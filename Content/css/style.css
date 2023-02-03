@@ -13,6 +13,7 @@ html,body{
     top: 0;
     left: 0;
 	width: 100vw;
+    z-index: 10;
 	/* background-color: rgba(0, 0, 0, 0.3); */
 }
 
@@ -42,23 +43,37 @@ html,body{
 
 /*********************************** INTRO ***********************************/
 .intro{
-    background: url(../images/intro-bg.png) no-repeat center center;
+    background: url(../images/intro-bg.png);
+    background-repeat: no-repeat;
     background-size: auto 100%;
-
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
 }
+.intro::before{
+    background: rgba(19, 26, 40, 0.7);
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0px;
+  }
+  .intro-wrapper{
+    position: relative;
+  }
 
 .intro-title{
     line-height: 36px;
     font-weight: 800;
-    font-size: 42px;
+    font-size: 60px;
 }
 
 .intro-desc{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 18px;
-    font-style: italic;
+    color: #69DB7C;
+    font-weight: 600;
 }
 
 .intro-button{
@@ -68,7 +83,6 @@ html,body{
 .intro-primary-text{
     font-weight: 800;
     color: var(--primary);
-    font-size: 53px;
     font-family: ''Roboto'';
 }
 
@@ -113,7 +127,7 @@ html,body{
 }
 
 .primary-decs{
-    text-align: center;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -172,7 +186,7 @@ html,body{
     background-color: #141B22;
     padding: 20px;
     height: 160px;
-
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +196,8 @@ html,body{
 
 /************************* STP ACCOUNT TRANSACTION ************************/
 .stp .border-box{
-    height: 48%;
+    height: 68%;
+    border-radius: 10px;
 }
 
 .stp-text{
@@ -190,18 +205,22 @@ html,body{
 }
 
 /**************************** TOKENOMIC ***************************/
-.tokenomic{
+/* .tokenomic{
     margin-top: 20px;
 
     background: url(../images/token-bg.png) no-repeat top right;
     background-size: contain;
-}
+} */
 
+.tokenomic-box{
+   display: flex;
+   flex-wrap: wrap;
+}
 .tokenomic-li{
-    position: relative;
+    padding-right: 30px;
+    text-align: center;
 }
-
-.tokenomic-li::before{
+/* .tokenomic-li::before{
     content: "⬢";
     position: absolute;
     color: var(--secondary);
@@ -209,24 +228,28 @@ html,body{
     left: -20px;
     font-size: 22px;
     transform: translateY(-50%);
-}
+} */
 
 .tokenomic-title{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
+    color: var(--primary);
 }
 
 .tokenomic-value{
-    color: var(--secondary);
+    color: var(--white);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 30px;
     margin-left: 10px;
 }
 
 .tokenomic-box{
-    padding: 15px 20px 15px 5vw;
-    background-color: #8ec84210;
     margin: 20px 0 40px;
+}
+.allocate-img1{
+    border: 1px solid #d5d5d58f;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /**************************** ALLOCATE ***************************/
@@ -242,6 +265,8 @@ html,body{
 /**************************** BENEFIT ***************************/
 .benefit{
     margin-top: 30px;
+    padding-bottom: 0px;
+    background: url(../images/chart_bg.png);
 }
 
 .benefit .primary-title{
@@ -513,6 +538,7 @@ html,body{
   padding: 20px;
   margin: 0 5px;
   background-color: #131B22;
+  border-radius: 50px 0px 50px 0px;
 }
 
 .team-avt{
@@ -1772,17 +1798,22 @@ input:focus-visible{
 }
 
 .util-bg {
-    background: #F1F1F1 url(../images/login-bg.png) no-repeat top center;
+    background-color: #0e1920;
     background-size: cover;
+}
+.util-bg .bn-login{
+    height: 100vh;
 }
 
 .primary-form {
     padding: 30px 20px;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    background-color: rgb(255 255 255 / 30%);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 14%);
     margin-top: 15px;
+}
+.primary-form .well{
+    color: var(--white);
+    margin-bottom: 0px;
 }
 
 .login-form{
@@ -1792,21 +1823,26 @@ input:focus-visible{
 
 .form-title {
     padding-bottom: 20px;
-    text-align: center;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 1px;
-    color: var(--primary-dark);
+    color: var(--white);
 }
 
 .primary-input{
     border-radius: 10px;
     padding: 6px 16px;
-    border: 1px solid #275E84;
-    background-color: var(--white);
+    border: 1px solid #d5d5d583;
+    background-color: #0e1920;
     flex: 1;
-    color: var(--primary-dark);
+    color: white;
     font-weight: 500;
+}
+.primary-input:focus{
+    background-color: #0e1920;
+    color: white;
+    box-shadow: none;
+    border: 1px solid #d5d5d583;
 }
 
 .primary-blue-button {
@@ -1822,10 +1858,22 @@ input:focus-visible{
     border: none;
 }
 
-.primary-text{
-    color: var(--primary);
+.forgotpasss{
+    color: var(--white);
+    text-align: right;
+    display: block;
+    margin-bottom: 20px;
 }
-
+.forgotpasss:hover{
+    color: #4AB848;
+}
+.have-account{
+    color: var(--white);
+    display: block;
+}
+.join-now{
+    color: #4AB848;
+}
 .login-form .form-label{
     font-size: 14px;
     font-weight: 500;
@@ -1834,3 +1882,40 @@ input:focus-visible{
 .form-check-label {
     font-size: 14px;
 }
+.box-custom{
+    display: flex;
+    align-items: center;
+}
+.bg-header{
+    background: url(../images/bn-token.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding: 100px 0px;
+}
+.custom-title{
+    color: white;
+    font-size: 14px;
+    text-transform: none;
+}
+.custom-content{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.border-box-custom{
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
+}
+.footer-end{
+    background-color: #2B8A3E;
+    padding: 20px 0px;
+}
+.footer-end .title{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.footer-end .social a img{
+    padding: 0px 5px;
+}
+
