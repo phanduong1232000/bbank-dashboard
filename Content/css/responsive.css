@@ -1,0 +1,258 @@
+/* PC high */
+@media (min-width: 1699px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+}
+
+
+/* PC only */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+@media (min-width: 985px) and (max-width: 1200px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+    
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .grid-m-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .grid-m-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-5-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .centering-mobile{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .primary-background{
+        background-size: cover;
+    }
+
+    .stp-text{
+        padding-right: 0;
+    }
+
+    .stp .border-box{
+        height: auto;
+    }
+
+    .benefit .primary-title{
+        flex-direction: column;
+    }
+
+    .benefit .primary-title-white{
+        margin-top: 10px;
+    }
+
+    .policy-package:hover{
+        margin-bottom: 160px;
+    }
+
+    .tokenomic{
+        background-image: none;
+    }
+
+    .tokenomic-value{
+        font-size: 26px;
+        margin-left: 4px;
+    }
+
+    .tokenomic-box {
+        padding: 15px 20px 15px 10vw;
+        margin-bottom: 0;
+    }
+
+    .tokenomic-li::before {
+        top: 50%;
+        left: -23px;
+        transform: translateY(-50%);
+    }
+
+    .roadmap{
+        background-image: none;
+        padding: 30px 0 !important;
+    }
+
+    .roadmap-item {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between !important;
+    }
+
+    .roadmap-wrapper::before{
+        height: 100%;
+        width: 3px;
+        top: 0;
+        left: 30px;
+        transform: translateX(-50%);
+    }
+
+    .roadmap-item-content{
+        width: 80vw;
+        margin: 0px 0 0px 50px;
+    }
+
+    .roadmap-item-content::before{
+        border-left: none;
+        border-top: 1px dashed #fff;
+        width: 50px;
+        height: 0;
+        top: 50%;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .roadmap-text{
+        min-height: 60px;
+    }
+
+    .team-box{
+        margin: 0;
+    }
+
+    .policy-package{
+        margin-bottom: 0;
+    }
+
+    .policy-package-price {
+        font-size: 18px;
+    }
+
+    .chart-value{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+    .date-wrapper .chart-line{
+        font-size: 10px;
+        transform: translate(-40%,90%);
+    }
+}
+
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+
+    .roadmap-item-content::before{
+        width: 120px;
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    .intro-right{
+        margin-top: 5vh;
+    }
+
+    .intro-button{
+        justify-content: center;
+    }
+
+    .intro-left{
+        width: 100%;
+    }
+
+    .intro-desc{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-right img {
+        width: 50%;
+    }
+
+    .potential-ul .tokenomic-title{
+        font-size: 18px;
+    }
+
+    .primary-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .footer{
+        padding-top: 20px !important;
+    }
+
+    .born-images{
+        margin: 10px 0 30px;
+    }
+
+    .dashboard-package{
+        padding-bottom: 80px;
+    }
+
+    .dashboard-bg{
+        padding-top: 55px;
+    }
+
+    .deposit .wallet-control-item {
+        width: 49%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .deposit .wallet-control-item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .wallet-control {
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+}
+

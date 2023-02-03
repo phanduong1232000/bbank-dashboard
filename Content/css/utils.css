@@ -1,0 +1,162 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --gray: #141B22;
+    --black: #000000 !important;
+    --primary: #21E786 !important;
+    --secondary: #8DCD39 !important;
+    --primary-dark: #075200 !important;
+}
+
+
+/* FONTS */
+@font-face {
+   font-family: 'Aristotelica Display';
+   src: url("../fonts/Zetafonts%20-%20Aristotelica%20Pro%20Display%20Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica CND';
+   src: url("../fonts/Zetafonts%20-%20AristotelicaPro%20CndText%20Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Zetafonts%20-%20Aristotelica%20Pro%20Text%20Extralight.otf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Arista-Pro-Alternate-Light-trial.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Aristotelica';
+   src: url("../fonts/Arista-Pro-Alternate-Bold-trial.ttf") format("truetype");
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Light-trial.ttf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Bold-trial.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Arista';
+   src: url("../fonts/Arista-Pro-Fat-trial.ttf") format("truetype");
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+   font-weight: 800;
+}
+
+/* Montserrat */
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-ThinItalic.ttf") format("truetype");
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype");
+   font-weight: 500;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-MediumItalic.ttf") format("truetype");
+   font-weight: 600;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf") format("truetype");
+   font-weight: 700;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf") format("truetype");
+   font-weight: 800;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/staticMontserrat-Black.html") format("truetype");
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url("../fonts/Montserrat/static/Montserrat-BlackItalic.ttf") format("truetype");
+   font-weight: 900;
+   font-style: italic;
+}
